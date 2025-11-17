@@ -8,6 +8,7 @@ AND fx.cve_id = cv.cve_id
 AND cv.cve_id = cc.cve_id 
 AND fx.score >= 55
 AND f.programming_language = 'Python'
-AND cc.cwe_id = 'CWE-89')
+AND cc.cwe_id = 'CWE-89') AS t
+ORDER BY cve_id;
 
 
