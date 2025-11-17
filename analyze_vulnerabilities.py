@@ -103,8 +103,8 @@ class VulnerabilityAnalyzer:
             raise ValueError(f"Invalid entry range format: {range_str}. Use format like '1-2', '26-50', or 'All'")
         
     def get_vulnerability_data(self) -> pd.DataFrame:
-        """Fetch entries based on configured range"""
-        # Build SQL query with dynamic LIMIT and OFFSET
+        """Fetch entries based on configured range (entries = unique CVEs)"""
+        # Build SQL query that treats "entries" as unique CVEs
         base_query = """
             SELECT 
                 CONCAT(fx.repo_url, '/commit/', fx.hash) AS commit_url, 
@@ -128,25 +128,40 @@ class VulnerabilityAnalyzer:
             AND cc.cwe_id = 'CWE-89'
         """
         
-        # Add ORDER BY
-        sql_query = f"SELECT * FROM ({base_query}) AS t ORDER BY cve_id"
-        
-        # Add LIMIT and OFFSET if not "All"
         if self.limit_entries is not None:
-            sql_query += f" LIMIT {self.limit_entries} OFFSET {self.start_entry}"
+            # Get the Nth unique CVEs based on range
+            # Then fetch all file changes for those CVEs
+            cve_subquery = f"""
+                SELECT DISTINCT cve_id 
+                FROM ({base_query}) AS base
+                ORDER BY cve_id
+                LIMIT {self.limit_entries} OFFSET {self.start_entry}
+            """
+            
+            sql_query = f"""
+                SELECT * FROM ({base_query}) AS t
+                WHERE cve_id IN ({cve_subquery})
+                ORDER BY cve_id, filename
+            """
+        else:
+            # Process all CVEs
+            sql_query = f"SELECT * FROM ({base_query}) AS t ORDER BY cve_id, filename"
         
         # Display mode information
         if self.entry_range.lower() == 'all':
-            mode_str = "Processing ALL entries"
+            mode_str = "Processing ALL CVEs (all file changes)"
         else:
             start_display = self.start_entry + 1  # Convert back to 1-based for display
-            mode_str = f"Processing entries {start_display}-{self.end_entry}"
+            mode_str = f"Processing CVEs {start_display}-{self.end_entry} (all file changes per CVE)"
         
         print(f"Connecting to database... [{mode_str}]")
         
         print("\nExecuting query...")
         df = pd.read_sql_query(sql_query, self.engine)
-        print(f"[OK] Query returned {len(df)} rows")
+        
+        # Count unique CVEs
+        unique_cves = df['cve_id'].nunique() if not df.empty else 0
+        print(f"[OK] Query returned {len(df)} rows ({unique_cves} unique CVEs)")
         
         return df
     
@@ -397,12 +412,12 @@ In 1-2 sentences, explain why these repositories might contain similar SQL injec
     def analyze_all(self) -> pd.DataFrame:
         """Analyze all vulnerability entries and return results"""
         if self.test_mode:
-            mode_str = "TEST MODE"
+            mode_str = "TEST MODE (First 2 CVEs)"
         elif self.entry_range.lower() == 'all':
-            mode_str = "FULL ANALYSIS (ALL ENTRIES)"
+            mode_str = "FULL ANALYSIS (ALL CVEs)"
         else:
             start_display = self.start_entry + 1
-            mode_str = f"ANALYSIS (Entries {start_display}-{self.end_entry})"
+            mode_str = f"ANALYSIS (CVEs {start_display}-{self.end_entry})"
         
         print(f"\n{'='*80}")
         print(f"  {mode_str} - Starting Vulnerability Analysis")
@@ -415,11 +430,12 @@ In 1-2 sentences, explain why these repositories might contain similar SQL injec
             print("No data found in the specified range")
             return pd.DataFrame()
         
-        # Analyze each entry with progress bar
+        # Analyze each file change with progress bar
         results = []
         total = len(df)
+        unique_cves = df['cve_id'].nunique()
         
-        print(f"\nProcessing {total} entries...\n")
+        print(f"\nProcessing {total} file changes from {unique_cves} CVE(s)...\n")
         
         # Use tqdm for progress bar
         for idx, row in tqdm(df.iterrows(), total=total, desc="Analyzing entries", unit="entry"):
