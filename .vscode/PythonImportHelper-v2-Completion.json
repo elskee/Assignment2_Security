@@ -9,112 +9,12 @@
         "documentation": {}
     },
     {
-        "label": "json",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "json",
-        "description": "json",
-        "detail": "json",
-        "documentation": {}
-    },
-    {
-        "label": "time",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "time",
-        "description": "time",
-        "detail": "time",
-        "documentation": {}
-    },
-    {
-        "label": "argparse",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "argparse",
-        "description": "argparse",
-        "detail": "argparse",
-        "documentation": {}
-    },
-    {
         "label": "pandas",
         "kind": 6,
         "isExtraImport": true,
         "importPath": "pandas",
         "description": "pandas",
         "detail": "pandas",
-        "documentation": {}
-    },
-    {
-        "label": "requests",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "requests",
-        "description": "requests",
-        "detail": "requests",
-        "documentation": {}
-    },
-    {
-        "label": "OpenAI",
-        "importPath": "openai",
-        "description": "openai",
-        "isExtraImport": true,
-        "detail": "openai",
-        "documentation": {}
-    },
-    {
-        "label": "load_dotenv",
-        "importPath": "dotenv",
-        "description": "dotenv",
-        "isExtraImport": true,
-        "detail": "dotenv",
-        "documentation": {}
-    },
-    {
-        "label": "load_dotenv",
-        "importPath": "dotenv",
-        "description": "dotenv",
-        "isExtraImport": true,
-        "detail": "dotenv",
-        "documentation": {}
-    },
-    {
-        "label": "Dict",
-        "importPath": "typing",
-        "description": "typing",
-        "isExtraImport": true,
-        "detail": "typing",
-        "documentation": {}
-    },
-    {
-        "label": "List",
-        "importPath": "typing",
-        "description": "typing",
-        "isExtraImport": true,
-        "detail": "typing",
-        "documentation": {}
-    },
-    {
-        "label": "create_engine",
-        "importPath": "sqlalchemy",
-        "description": "sqlalchemy",
-        "isExtraImport": true,
-        "detail": "sqlalchemy",
-        "documentation": {}
-    },
-    {
-        "label": "create_engine",
-        "importPath": "sqlalchemy",
-        "description": "sqlalchemy",
-        "isExtraImport": true,
-        "detail": "sqlalchemy",
-        "documentation": {}
-    },
-    {
-        "label": "tqdm",
-        "importPath": "tqdm",
-        "description": "tqdm",
-        "isExtraImport": true,
-        "detail": "tqdm",
         "documentation": {}
     },
     {
@@ -135,21 +35,19 @@
         "documentation": {}
     },
     {
-        "label": "VulnerabilityAnalyzer",
-        "kind": 6,
-        "importPath": "analyze_vulnerabilities",
-        "description": "analyze_vulnerabilities",
-        "peekOfCode": "class VulnerabilityAnalyzer:\n    \"\"\"Analyzes vulnerabilities using GPT-4o-mini and GitHub Search API\"\"\"\n    def __init__(self, test_mode: bool = False, entry_range: str = None):\n        \"\"\"Initialize the analyzer with API credentials\n        Args:\n            test_mode: If True, only process 2 entries for testing (overrides entry_range)\n            entry_range: Range of entries to process (e.g., \"1-2\", \"26-50\", \"All\")\n                        If None, reads from ENTRY_RANGE env variable (defaults to \"26-51\")\n        \"\"\"\n        load_dotenv()",
-        "detail": "analyze_vulnerabilities",
+        "label": "load_dotenv",
+        "importPath": "dotenv",
+        "description": "dotenv",
+        "isExtraImport": true,
+        "detail": "dotenv",
         "documentation": {}
     },
     {
-        "label": "main",
-        "kind": 2,
-        "importPath": "analyze_vulnerabilities",
-        "description": "analyze_vulnerabilities",
-        "peekOfCode": "def main():\n    \"\"\"Main execution function\"\"\"\n    parser = argparse.ArgumentParser(\n        description=\"Analyze SQL injection vulnerabilities using AI and GitHub search\",\n        formatter_class=argparse.RawDescriptionHelpFormatter,\n        epilog=\"\"\"\nExamples:\n  # Test mode (2 entries only)\n  python analyze_vulnerabilities.py --test\n  # Specific range (from .env or command line)",
-        "detail": "analyze_vulnerabilities",
+        "label": "create_engine",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
         "documentation": {}
     },
     {
