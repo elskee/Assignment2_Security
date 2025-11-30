@@ -1,93 +1,92 @@
-# Assignment-2_Security
+# Assignment 2 - Security Vulnerability Analysis
 
-## Vulnerability Analysis Project
+A security research project that analyzes SQL injection vulnerabilities (CWE-89) in Python code and searches for similar vulnerable patterns in other GitHub repositories.
 
-This project analyzes SQL injection vulnerabilities (CWE-89) in Python code from a PostgreSQL database of security fixes. It uses AI-powered analysis to identify vulnerable functions, understand fixes, and discover similar vulnerable code patterns in other GitHub repositories.
+## Project Structure
 
-## Project Files
+### `cve_searcher/`
+Automated tool that searches GitHub for vulnerable code patterns similar to those found in CVE databases.
 
-- **`analyze_vulnerabilities.py`** - Main analysis script that processes database entries 26-51
-- **`export_to_excel.py`** - Original script to export SQL query results to Excel
-- **`dataclean.sql`** - SQL query to fetch vulnerability data
-- **`requirements.txt`** - Python dependencies
-- **`SETUP_GUIDE.md`** - Detailed setup and usage instructions
+**Features:**
+- AI-powered search pattern extraction using GPT
+- GitHub code search integration
+- Automatic filtering of security scanner projects
+- Results ranked by repository stars
+
+### `database_interaction/`
+Database analysis tools for extracting and processing vulnerability data from PostgreSQL CVE database.
+
+**Features:**
+- SQL query execution and data export
+- Vulnerability analysis and reporting
+- Excel report generation
 
 ## Quick Start
 
-### 1. Install dependencies
-```bash
-pip install -r requirements.txt
-```
+### Prerequisites
+- Python 3.8+
+- OpenAI API key
+- GitHub Personal Access Token (recommended)
+- PostgreSQL database (for database_interaction only)
 
-### 2. Configure environment variables
-Create a `.env` file with your credentials:
-```env
-POSTGRES_HOST=127.0.0.1
-POSTGRES_PORT=5432
-POSTGRES_DBNAME=postgrescvedumper
-POSTGRES_USER=postgrescvedumper
-POSTGRES_PASSWORD=your_password
+### Setup
 
-OPENAI_API_KEY=sk-your-key-here
-GITHUB_TOKEN=ghp-your-token-here  # Optional
+1. **Install dependencies:**
+   ```bash
+   # For CVE searcher
+   cd cve_searcher
+   pip install -r requirements.txt
+   
+   # For database interaction
+   cd database_interaction
+   pip install -r requirements.txt
+   ```
 
-# Entry range to process (Optional, defaults to "26-51")
-# Examples: "1-10", "26-51", "All"
-ENTRY_RANGE=26-51
-```
+2. **Configure environment variables:**
+   
+   Create a `.env` file in the appropriate directory:
+   ```env
+   OPENAI_API_KEY=your_openai_api_key
+   GITHUB_TOKEN=your_github_token
+   
+   # For database_interaction only:
+   POSTGRES_HOST=127.0.0.1
+   POSTGRES_PORT=5432
+   POSTGRES_DBNAME=postgrescvedumper
+   POSTGRES_USER=your_username
+   POSTGRES_PASSWORD=your_password
+   ```
 
-### 3. Run the analysis
+3. **Run the tools:**
+   
+   **CVE Searcher:**
+   ```bash
+   cd cve_searcher
+   python main.py
+   ```
+   
+   **Database Export:**
+   ```bash
+   cd database_interaction
+   python export_to_excel.py
+   ```
 
-**Test mode (recommended first run):**
-```bash
-python analyze_vulnerabilities.py --test
-```
-Processes only 2 entries (~1 minute) to verify everything works.
+## Getting API Keys
 
-**Specific entry range:**
-```bash
-# Process entries 1-5
-python analyze_vulnerabilities.py --range "1-5"
+**OpenAI API Key:** https://platform.openai.com/api-keys
+- Sign in and create a new secret key
 
-# Process entries 26-50
-python analyze_vulnerabilities.py --range "26-50"
-
-# Process all entries
-python analyze_vulnerabilities.py --range "All"
-```
-
-**Default mode (uses ENTRY_RANGE from .env):**
-```bash
-python analyze_vulnerabilities.py
-```
-
-## Features
-
-The vulnerability analysis script:
-
-1. **Extracts vulnerable function names** - Uses GPT-4o-mini to identify which functions contain SQL injection vulnerabilities
-2. **Identifies fixes** - Analyzes code changes to understand what security fixes were applied
-3. **Explains vulnerabilities** - Provides clear explanations of how the SQL injection could be exploited
-4. **Searches GitHub** - Finds other public repositories with similar vulnerable code patterns
-5. **Generates comprehensive reports** - Exports all findings to an Excel file
+**GitHub Token:** https://github.com/settings/tokens
+- Generate a classic token with `public_repo` and `read:org` scopes
 
 ## Output
 
-Results are saved to `vulnerability_analysis_results.xlsx` with columns:
-- Original vulnerability data (CVE ID, commit URL, repo, filename)
-- Vulnerable function name
-- Fix description
-- Vulnerability explanation
-- GitHub repositories with similar code
-- Analysis of why those repos might be vulnerable
+Results are saved to Excel files:
+- `cve_searcher/dataclean_results.xlsx` - GitHub search results
+- `database_interaction/vulnerability_analysis_results.xlsx` - Database analysis
 
-## Documentation
+## Notes
 
-See **`SETUP_GUIDE.md`** for detailed setup instructions, troubleshooting, and cost estimates.
+- Keep your `.env` files secure and never commit them to version control
+- This tool is for security research and educational purposes only
 
-## Requirements
-
-- Python 3.8+
-- PostgreSQL database with vulnerability data
-- OpenAI API key (required)
-- GitHub personal access token (optional, recommended)

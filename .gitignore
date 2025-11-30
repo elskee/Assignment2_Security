@@ -1,3 +1,62 @@
-# Ignore SQL files
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
 
-postgrescvedumper-2024-09-26.sql
+# Virtual environments
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Environment variables
+.env
+.env.local
+
+# Excel files
+*.xlsx
+*.xls
+
+# Backup files
+*.bak
+*~
+
+# Logs
+logs/
+*.log
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*.swn
+.DS_Store
+
+# Database
+*.db
+*.sqlite
+*.sqlite3
+*.sql
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+

@@ -1,11 +1,248 @@
 [
     {
+        "label": "openpyxl",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "openpyxl",
+        "description": "openpyxl",
+        "detail": "openpyxl",
+        "documentation": {}
+    },
+    {
+        "label": "List",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Dict",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Any",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "List",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Dict",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Any",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Optional",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "List",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Dict",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Any",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Optional",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "List",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Dict",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Any",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
         "label": "os",
         "kind": 6,
         "isExtraImport": true,
         "importPath": "os",
         "description": "os",
         "detail": "os",
+        "documentation": {}
+    },
+    {
+        "label": "Github",
+        "importPath": "github",
+        "description": "github",
+        "isExtraImport": true,
+        "detail": "github",
+        "documentation": {}
+    },
+    {
+        "label": "GithubException",
+        "importPath": "github",
+        "description": "github",
+        "isExtraImport": true,
+        "detail": "github",
+        "documentation": {}
+    },
+    {
+        "label": "RateLimitExceededException",
+        "importPath": "github",
+        "description": "github",
+        "isExtraImport": true,
+        "detail": "github",
+        "documentation": {}
+    },
+    {
+        "label": "time",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "time",
+        "description": "time",
+        "detail": "time",
+        "documentation": {}
+    },
+    {
+        "label": "OpenAI",
+        "importPath": "openai",
+        "description": "openai",
+        "isExtraImport": true,
+        "detail": "openai",
+        "documentation": {}
+    },
+    {
+        "label": "json",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "json",
+        "description": "json",
+        "detail": "json",
+        "documentation": {}
+    },
+    {
+        "label": "logging",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "logging",
+        "description": "logging",
+        "detail": "logging",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "sys",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "sys",
+        "description": "sys",
+        "detail": "sys",
+        "documentation": {}
+    },
+    {
+        "label": "load_dotenv",
+        "importPath": "dotenv",
+        "description": "dotenv",
+        "isExtraImport": true,
+        "detail": "dotenv",
+        "documentation": {}
+    },
+    {
+        "label": "load_dotenv",
+        "importPath": "dotenv",
+        "description": "dotenv",
+        "isExtraImport": true,
+        "detail": "dotenv",
+        "documentation": {}
+    },
+    {
+        "label": "ExcelHandler",
+        "importPath": "excel_handler",
+        "description": "excel_handler",
+        "isExtraImport": true,
+        "detail": "excel_handler",
+        "documentation": {}
+    },
+    {
+        "label": "GPT5Handler",
+        "importPath": "gpt5_handler",
+        "description": "gpt5_handler",
+        "isExtraImport": true,
+        "detail": "gpt5_handler",
+        "documentation": {}
+    },
+    {
+        "label": "GitHubSearcher",
+        "importPath": "github_search",
+        "description": "github_search",
+        "isExtraImport": true,
+        "detail": "github_search",
         "documentation": {}
     },
     {
@@ -27,117 +264,120 @@
         "documentation": {}
     },
     {
-        "label": "OperationalError",
-        "importPath": "psycopg2",
-        "description": "psycopg2",
-        "isExtraImport": true,
-        "detail": "psycopg2",
+        "label": "Config",
+        "kind": 6,
+        "importPath": "cve_searcher.config",
+        "description": "cve_searcher.config",
+        "peekOfCode": "class Config:\n    \"\"\"Configuration settings for the vulnerability searcher.\"\"\"\n    # Excel file settings\n    EXCEL_FILE_PATH = \"dataclean_results.xlsx\"\n    CREATE_BACKUP = True\n    # Search settings\n    MAX_REPOS_PER_VULNERABILITY = 5\n    MAX_SEARCH_RESULTS_PER_QUERY = 30\n    # GitHub API settings\n    GITHUB_RATE_LIMIT_DELAY = 2  # Seconds between requests",
+        "detail": "cve_searcher.config",
         "documentation": {}
     },
     {
-        "label": "load_dotenv",
-        "importPath": "dotenv",
-        "description": "dotenv",
-        "isExtraImport": true,
-        "detail": "dotenv",
+        "label": "get_config",
+        "kind": 2,
+        "importPath": "cve_searcher.config",
+        "description": "cve_searcher.config",
+        "peekOfCode": "def get_config():\n    \"\"\"Get the configuration instance.\"\"\"\n    return Config()",
+        "detail": "cve_searcher.config",
         "documentation": {}
     },
     {
-        "label": "create_engine",
-        "importPath": "sqlalchemy",
-        "description": "sqlalchemy",
-        "isExtraImport": true,
-        "detail": "sqlalchemy",
+        "label": "ExcelHandler",
+        "kind": 6,
+        "importPath": "cve_searcher.excel_handler",
+        "description": "cve_searcher.excel_handler",
+        "peekOfCode": "class ExcelHandler:\n    \"\"\"Handles Excel file operations for vulnerability data.\"\"\"\n    def __init__(self, file_path: str):\n        \"\"\"\n        Initialize the Excel handler.\n        Args:\n            file_path: Path to the Excel file\n        \"\"\"\n        self.file_path = file_path\n        self.workbook = None",
+        "detail": "cve_searcher.excel_handler",
+        "documentation": {}
+    },
+    {
+        "label": "GitHubSearcher",
+        "kind": 6,
+        "importPath": "cve_searcher.github_search",
+        "description": "cve_searcher.github_search",
+        "peekOfCode": "class GitHubSearcher:\n    \"\"\"Handles GitHub API searches and repository analysis.\"\"\"\n    def __init__(self, token: Optional[str] = None):\n        \"\"\"\n        Initialize the GitHub searcher.\n        Args:\n            token: GitHub personal access token (if None, reads from environment)\n        \"\"\"\n        self.token = token or os.getenv('GITHUB_TOKEN')\n        if not self.token:",
+        "detail": "cve_searcher.github_search",
+        "documentation": {}
+    },
+    {
+        "label": "GPT5Handler",
+        "kind": 6,
+        "importPath": "cve_searcher.gpt5_handler",
+        "description": "cve_searcher.gpt5_handler",
+        "peekOfCode": "class GPT5Handler:\n    \"\"\"Handles GPT-5 API interactions for vulnerability analysis.\"\"\"\n    def __init__(self, api_key: Optional[str] = None):\n        \"\"\"\n        Initialize the GPT-5 handler.\n        Args:\n            api_key: OpenAI API key (if None, reads from environment)\n        \"\"\"\n        self.api_key = api_key or os.getenv('OPENAI_API_KEY')\n        if not self.api_key:",
+        "detail": "cve_searcher.gpt5_handler",
+        "documentation": {}
+    },
+    {
+        "label": "setup_logger",
+        "kind": 2,
+        "importPath": "cve_searcher.logger_config",
+        "description": "cve_searcher.logger_config",
+        "peekOfCode": "def setup_logger(name: str = \"vulnerability_searcher\", log_dir: str = \"logs\") -> logging.Logger:\n    \"\"\"\n    Set up a logger with file and console handlers.\n    Args:\n        name: Logger name\n        log_dir: Directory for log files\n    Returns:\n        Configured logger instance\n    \"\"\"\n    # Create logs directory if it doesn't exist",
+        "detail": "cve_searcher.logger_config",
+        "documentation": {}
+    },
+    {
+        "label": "log_api_call",
+        "kind": 2,
+        "importPath": "cve_searcher.logger_config",
+        "description": "cve_searcher.logger_config",
+        "peekOfCode": "def log_api_call(logger: logging.Logger, api_name: str, success: bool, details: str = \"\"):\n    \"\"\"\n    Log an API call with consistent formatting.\n    Args:\n        logger: Logger instance\n        api_name: Name of the API (GPT-5, GitHub, etc.)\n        success: Whether the call was successful\n        details: Additional details\n    \"\"\"\n    if success:",
+        "detail": "cve_searcher.logger_config",
+        "documentation": {}
+    },
+    {
+        "label": "log_rate_limit",
+        "kind": 2,
+        "importPath": "cve_searcher.logger_config",
+        "description": "cve_searcher.logger_config",
+        "peekOfCode": "def log_rate_limit(logger: logging.Logger, api_name: str, remaining: int, limit: int):\n    \"\"\"\n    Log API rate limit status.\n    Args:\n        logger: Logger instance\n        api_name: Name of the API\n        remaining: Remaining requests\n        limit: Total limit\n    \"\"\"\n    percentage = (remaining / limit * 100) if limit > 0 else 0",
+        "detail": "cve_searcher.logger_config",
+        "documentation": {}
+    },
+    {
+        "label": "log_vulnerability_processing",
+        "kind": 2,
+        "importPath": "cve_searcher.logger_config",
+        "description": "cve_searcher.logger_config",
+        "peekOfCode": "def log_vulnerability_processing(logger: logging.Logger, row_index: int, cve_id: str, status: str, details: str = \"\"):\n    \"\"\"\n    Log vulnerability processing status.\n    Args:\n        logger: Logger instance\n        row_index: Excel row index\n        cve_id: CVE identifier\n        status: Processing status (started, completed, failed, skipped)\n        details: Additional details\n    \"\"\"",
+        "detail": "cve_searcher.logger_config",
+        "documentation": {}
+    },
+    {
+        "label": "log_search_results",
+        "kind": 2,
+        "importPath": "cve_searcher.logger_config",
+        "description": "cve_searcher.logger_config",
+        "peekOfCode": "def log_search_results(logger: logging.Logger, row_index: int, num_results: int, repos: list = None):\n    \"\"\"\n    Log search results summary.\n    Args:\n        logger: Logger instance\n        row_index: Excel row index\n        num_results: Number of results found\n        repos: List of repository names (optional)\n    \"\"\"\n    if num_results == 0:",
+        "detail": "cve_searcher.logger_config",
+        "documentation": {}
+    },
+    {
+        "label": "VulnerabilitySearcher",
+        "kind": 6,
+        "importPath": "cve_searcher.main",
+        "description": "cve_searcher.main",
+        "peekOfCode": "class VulnerabilitySearcher:\n    \"\"\"Main class coordinating vulnerability search across GitHub.\"\"\"\n    def __init__(self, excel_path: str):\n        \"\"\"\n        Initialize the vulnerability searcher.\n        Args:\n            excel_path: Path to the Excel file with vulnerability data\n        \"\"\"\n        # Load environment variables\n        load_dotenv()",
+        "detail": "cve_searcher.main",
         "documentation": {}
     },
     {
         "label": "main",
         "kind": 2,
-        "importPath": "export_to_excel",
-        "description": "export_to_excel",
-        "peekOfCode": "def main():\n    # Load environment variables from .env file\n    load_dotenv()\n    # Get database connection parameters from environment\n    db_config = {\n        'host': os.getenv('POSTGRES_HOST', '127.0.0.1'),\n        'port': os.getenv('POSTGRES_PORT', '5432'),\n        'database': os.getenv('POSTGRES_DBNAME', 'postgrescvedumper'),\n        'user': os.getenv('POSTGRES_USER', 'postgrescvedumper'),\n        'password': os.getenv('POSTGRES_PASSWORD')",
-        "detail": "export_to_excel",
+        "importPath": "cve_searcher.main",
+        "description": "cve_searcher.main",
+        "peekOfCode": "def main():\n    \"\"\"Main entry point.\"\"\"\n    # Default Excel file path\n    excel_file = \"dataclean_results.xlsx\"\n    # Check if file exists\n    if not os.path.exists(excel_file):\n        print(f\"ERROR: Excel file not found: {excel_file}\")\n        print(\"Please ensure the file exists in the current directory.\")\n        sys.exit(1)\n    # Create and run searcher",
+        "detail": "cve_searcher.main",
         "documentation": {}
     },
     {
-        "label": "create_connection",
+        "label": "main",
         "kind": 2,
-        "importPath": "test",
-        "description": "test",
-        "peekOfCode": "def create_connection(db_name, db_user, db_password, db_host, db_port):\n    \"\"\"\n    create a connection to a PostgreSQL database using SQLAlchemy\n    \"\"\"\n    try:\n        engine = create_engine(f'postgresql://{db_user}:{db_password}@{db_host}:{db_port}/{db_name}')\n    except Exception as e:\n        print(f\"An error occurred: {e}\")\n        return None\n    return engine",
-        "detail": "test",
-        "documentation": {}
-    },
-    {
-        "label": "db_name",
-        "kind": 5,
-        "importPath": "test",
-        "description": "test",
-        "peekOfCode": "db_name = \"postgrescvedumper\"\ndb_user = \"postgrescvedumper\"\ndb_password = \"a42a18537d74c3b7e584c769152c3d\"\ndb_host = \"127.0.0.1\"\ndb_port = \"5432\"\nconn = create_connection(db_name, db_user, db_password, db_host, db_port)\nquery = \"\"\"\nSELECT cv.cve_id, f.filename, f.num_lines_added, f.num_lines_deleted, f.code_before, f.code_after, cc.cwe_id \nFROM file_change f, commits c, fixes fx, cve cv, cwe_classification cc\nWHERE f.hash = c.hash ",
-        "detail": "test",
-        "documentation": {}
-    },
-    {
-        "label": "db_user",
-        "kind": 5,
-        "importPath": "test",
-        "description": "test",
-        "peekOfCode": "db_user = \"postgrescvedumper\"\ndb_password = \"a42a18537d74c3b7e584c769152c3d\"\ndb_host = \"127.0.0.1\"\ndb_port = \"5432\"\nconn = create_connection(db_name, db_user, db_password, db_host, db_port)\nquery = \"\"\"\nSELECT cv.cve_id, f.filename, f.num_lines_added, f.num_lines_deleted, f.code_before, f.code_after, cc.cwe_id \nFROM file_change f, commits c, fixes fx, cve cv, cwe_classification cc\nWHERE f.hash = c.hash \nAND c.hash = fx.hash ",
-        "detail": "test",
-        "documentation": {}
-    },
-    {
-        "label": "db_password",
-        "kind": 5,
-        "importPath": "test",
-        "description": "test",
-        "peekOfCode": "db_password = \"a42a18537d74c3b7e584c769152c3d\"\ndb_host = \"127.0.0.1\"\ndb_port = \"5432\"\nconn = create_connection(db_name, db_user, db_password, db_host, db_port)\nquery = \"\"\"\nSELECT cv.cve_id, f.filename, f.num_lines_added, f.num_lines_deleted, f.code_before, f.code_after, cc.cwe_id \nFROM file_change f, commits c, fixes fx, cve cv, cwe_classification cc\nWHERE f.hash = c.hash \nAND c.hash = fx.hash \nAND fx.cve_id = cv.cve_id ",
-        "detail": "test",
-        "documentation": {}
-    },
-    {
-        "label": "db_host",
-        "kind": 5,
-        "importPath": "test",
-        "description": "test",
-        "peekOfCode": "db_host = \"127.0.0.1\"\ndb_port = \"5432\"\nconn = create_connection(db_name, db_user, db_password, db_host, db_port)\nquery = \"\"\"\nSELECT cv.cve_id, f.filename, f.num_lines_added, f.num_lines_deleted, f.code_before, f.code_after, cc.cwe_id \nFROM file_change f, commits c, fixes fx, cve cv, cwe_classification cc\nWHERE f.hash = c.hash \nAND c.hash = fx.hash \nAND fx.cve_id = cv.cve_id \nAND cv.cve_id = cc.cve_id ",
-        "detail": "test",
-        "documentation": {}
-    },
-    {
-        "label": "db_port",
-        "kind": 5,
-        "importPath": "test",
-        "description": "test",
-        "peekOfCode": "db_port = \"5432\"\nconn = create_connection(db_name, db_user, db_password, db_host, db_port)\nquery = \"\"\"\nSELECT cv.cve_id, f.filename, f.num_lines_added, f.num_lines_deleted, f.code_before, f.code_after, cc.cwe_id \nFROM file_change f, commits c, fixes fx, cve cv, cwe_classification cc\nWHERE f.hash = c.hash \nAND c.hash = fx.hash \nAND fx.cve_id = cv.cve_id \nAND cv.cve_id = cc.cve_id \nAND f.programming_language = 'Python'",
-        "detail": "test",
-        "documentation": {}
-    },
-    {
-        "label": "conn",
-        "kind": 5,
-        "importPath": "test",
-        "description": "test",
-        "peekOfCode": "conn = create_connection(db_name, db_user, db_password, db_host, db_port)\nquery = \"\"\"\nSELECT cv.cve_id, f.filename, f.num_lines_added, f.num_lines_deleted, f.code_before, f.code_after, cc.cwe_id \nFROM file_change f, commits c, fixes fx, cve cv, cwe_classification cc\nWHERE f.hash = c.hash \nAND c.hash = fx.hash \nAND fx.cve_id = cv.cve_id \nAND cv.cve_id = cc.cve_id \nAND f.programming_language = 'Python'\nAND cc.cwe_id = 'CWE-89'",
-        "detail": "test",
-        "documentation": {}
-    },
-    {
-        "label": "query",
-        "kind": 5,
-        "importPath": "test",
-        "description": "test",
-        "peekOfCode": "query = \"\"\"\nSELECT cv.cve_id, f.filename, f.num_lines_added, f.num_lines_deleted, f.code_before, f.code_after, cc.cwe_id \nFROM file_change f, commits c, fixes fx, cve cv, cwe_classification cc\nWHERE f.hash = c.hash \nAND c.hash = fx.hash \nAND fx.cve_id = cv.cve_id \nAND cv.cve_id = cc.cve_id \nAND f.programming_language = 'Python'\nAND cc.cwe_id = 'CWE-89'\n\"\"\"",
-        "detail": "test",
-        "documentation": {}
-    },
-    {
-        "label": "python_sql_injection_fixes",
-        "kind": 5,
-        "importPath": "test",
-        "description": "test",
-        "peekOfCode": "python_sql_injection_fixes = pd.read_sql_query(query, conn)\npython_sql_injection_fixes.head(5)",
-        "detail": "test",
+        "importPath": "database_interaction.export_to_excel",
+        "description": "database_interaction.export_to_excel",
+        "peekOfCode": "def main():\n    # Load environment variables from .env file\n    load_dotenv()\n    # Get database connection parameters from environment\n    db_config = {\n        'host': os.getenv('POSTGRES_HOST', '127.0.0.1'),\n        'port': os.getenv('POSTGRES_PORT', '5432'),\n        'database': os.getenv('POSTGRES_DBNAME', 'postgrescvedumper'),\n        'user': os.getenv('POSTGRES_USER', 'postgrescvedumper'),\n        'password': os.getenv('POSTGRES_PASSWORD')",
+        "detail": "database_interaction.export_to_excel",
         "documentation": {}
     }
 ]
