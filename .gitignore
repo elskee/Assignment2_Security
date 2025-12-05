@@ -17,8 +17,8 @@ venv.bak/
 .env.local
 
 # Excel files
-*.xlsx
-*.xls
+# *.xlsx
+# *.xls
 
 # Backup files
 *.bak
@@ -37,10 +37,12 @@ logs/
 .DS_Store
 
 # Database
-*.db
-*.sqlite
-*.sqlite3
-*.sql
+# .sql
+# .db
+# .sqlite3
+# .sqlite
+
+postgrescvedumper-2024-09-26.sql
 
 # Distribution / packaging
 .Python
@@ -59,4 +61,6 @@ wheels/
 *.egg-info/
 .installed.cfg
 *.egg
+
+
 
