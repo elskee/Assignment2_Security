@@ -23,7 +23,6 @@ class GPT5Handler:
             raise ValueError("OpenAI API key not provided")
         
         self.client = OpenAI(api_key=self.api_key)
-        # Using gpt-4o (update to gpt-5 when available)
         self.model = "gpt-5-mini"
     
     def extract_search_patterns(self, code_snippet: str, vulnerability_type: str) -> List[str]:

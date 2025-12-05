@@ -20,8 +20,8 @@ class Config:
     GITHUB_MIN_STARS = 0  # Minimum stars for a repo to be included
     
     # GPT settings
-    GPT_MODEL = "gpt-4-turbo-preview"  # Update to "gpt-5" when available
-    GPT_TEMPERATURE = 0.3
+    GPT_MODEL = "gpt-5-mini" 
+    # GPT_TEMPERATURE = 0.3 Not in use for GPT-5
     GPT_MAX_TOKENS = 500
     
     # Validation settings
